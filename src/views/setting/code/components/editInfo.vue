@@ -582,7 +582,7 @@
         </a-tabs>
       </a-form>
     </a-spin>
-    <setting-component ref="settingComponentRef" @confrim="confrimSetting" />
+    <setting-component ref="settingComponentRef" @confirm="confirmSetting" />
   </a-modal>
 </template>
 
@@ -648,7 +648,7 @@ const open = async (id) => {
   loading.value = false
 }
 
-const confrimSetting = (name, value) => {
+const confirmSetting = (name, value) => {
   form.value.columns.find((item, idx) => {
     if (item.column_name == name) {
       form.value.columns[idx].options = value
