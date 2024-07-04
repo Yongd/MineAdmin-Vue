@@ -329,7 +329,7 @@ const del = (idx) => {
 }
 
 const save = (done) => {
-  emit('confrim', row.value.column_name, form.value)
+  emit('confirm', row.value.column_name, form.value)
   done(true)
 }
 
